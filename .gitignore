@@ -1,0 +1,14 @@
+.*
+!.gitignore
+
+Thumbs.db
+Desktop.ini
+
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+npm-debug.log*
+node_modules/
