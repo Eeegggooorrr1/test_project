@@ -25,8 +25,9 @@ body {
     padding: var(--space-3);
 }
 
-.container{ width:min(100% - 2*var(--space-4), 1120px); margin-inline:auto; }
-
+.container {
+    width: min(calc(100% - 2 * var(--space-4)), 1120px);
+}
 .section {
     padding-block: var(--space-5);
 }
@@ -153,9 +154,6 @@ html { scroll-behavior: smooth; }
     display: none;
 }
 
-.form__input:invalid:not(:focus):not(:placeholder-shown) + .form__error {
-    display: block;
-}
 
 .form__button {
     background-color: var(--color-primary);
@@ -234,12 +232,4 @@ margin-inline: auto; /* центрируем блок */
 width:100%; height:100%; /* медиа занимает всю площадь контейнера
 */
 border:0; border-radius:var(--radius);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.mt-4 {
-    margin-top: var(--space-4);
 }
