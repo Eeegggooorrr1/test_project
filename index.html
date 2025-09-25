@@ -1,55 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Главная -  оч крутой сайт</title>
-	<meta name="description" content="очень крутой сайт">
-	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - оч крутой сайт</title>
+    <meta name="description" content="очень крутой сайт">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<header>
-		<a href="/">Логотип или название сайта</a>
-		<nav>
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="about.html">О нас</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<!-- Уникальное основное содержимое страницы -->
-	<main>
-		<h1>Добро пожаловать на наш сайт!</h1>
-		
-		<!-- Секция 1 с якорем -->
-		<section id="services">
-			<h2>Наши услуги</h2>
-			<p>Описание предоставляемых услуг...</p>
-			<a href="#contacts">Связаться с нами</a> <!-- Якорная ссылка внутри страницы -->
-		</section>
-		
-		<!-- Секция 2 с якорем -->
-		<section id="portfolio">
-			<h2>Портфолио</h2>
-			<p>Примеры наших работ...</p>
-		</section>
-		
-		<!-- Секция 3 с якорем -->
-		<section id="contacts">
-			<h2>Контактная информация</h2>
-			<p>Наши контакты...</p>
-			<a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу -->
-		</section>
-	</main>
-	
-	<!-- Подвал сайта -->
-	<footer>
-		<p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
-		<p>Телефон: +7 (123) 456-78-90</p>
-	</footer>
+    <div class="container">
+        <header class="header">
+            <a class="header__brand" href="/">Логотип или название сайта</a>
+            <nav class="nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link nav__link--active" href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="about.html">О нас</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <span>Главная</span>
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section class="hero">
+                <h1>Добро пожаловать на наш сайт!</h1>
+                <p>Мы предлагаем инновационные решения для вашего бизнеса</p>
+            </section>
+            
+            <section class="section" id="services">
+                <h2 class="section__title">Наши услуги</h2>
+                <p>Описание предоставляемых услуг...</p>
+                
+                <img 
+                    src="https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_1400/v1451071843/castle.jpg" 
+                    srcset="
+                        https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_665/v1451071843/castle.jpg 600w,
+                        https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_1215/v1451071843/castle.jpg 1200w
+                    "
+                    sizes="(max-width: 700px) 100vw, 600px"
+                    alt="Наши услуги" 
+                    class="content-image"
+                    width="600" 
+                    height="400"
+                    loading="lazy"
+                >
+                
+                <a href="#contacts">Связаться с нами</a>
+            </section>
+            
+            <section class="section" id="portfolio">
+                <h2 class="section__title">Портфолио</h2>
+                <p>Примеры наших работ...</p>
+            </section>
+            
+            <section class="section" id="contacts">
+                <h2 class="section__title">Контактная информация</h2>
+                <p>Наши контакты...</p>
+                <a href="contacts.html">Подробнее</a> 
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Все права защищены.</p>
+            <p>Телефон: +7 (999) 999-99-99</p>
+        </footer>
+    </div>
 </body>
 </html>
